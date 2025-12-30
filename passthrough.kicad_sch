@@ -2951,7 +2951,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TA2528"
+		(property "Value" "TLA2528"
 			(at 205.3433 74.93 0)
 			(effects
 				(font
