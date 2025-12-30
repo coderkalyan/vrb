@@ -1028,9 +1028,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin no_connect line
 					(at -10.16 -5.08 0)
 					(length 2.54)
+					(hide yes)
 					(name "PG"
 						(effects
 							(font
@@ -1657,10 +1658,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f156dd42-6f55-48ac-a4b7-dd3f1c244ae8")
-	)
-	(no_connect
-		(at 58.42 53.34)
-		(uuid "b9ca577f-fabd-469c-aa90-c6c8568cbc28")
 	)
 	(wire
 		(pts

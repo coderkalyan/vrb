@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -144,7 +144,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.09,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -157,9 +157,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.15,
-        "min_track_width": 0.09,
+        "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.25,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -249,6 +249,10 @@
           "drill": 0.25
         },
         {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
           "diameter": 0.8,
           "drill": 0.4
         }
@@ -271,32 +275,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "multiple_net_names|1130300|431800|26a6ddbb-916f-418e-9575-3c0d967a00e1|287dfcba-f239-439d-88f1-ffde48d4a84b|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51",
-        ""
-      ],
-      [
-        "multiple_net_names|1536700|419100|45c84126-1f65-4182-9aba-2eb6b2a0625f|aad2b78d-b93d-4401-9df3-df42e2a457f7|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2",
-        ""
-      ],
-      [
-        "multiple_net_names|1600200|419100|45c84126-1f65-4182-9aba-2eb6b2a0625f|aad2b78d-b93d-4401-9df3-df42e2a457f7|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2",
-        ""
-      ],
-      [
-        "multiple_net_names|1739900|457200|0e1505c4-81f2-4fe5-ae6a-936528975f7e|587af7e5-b94b-48ab-b94a-a72983ca1a3d|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51",
-        ""
-      ],
-      [
-        "multiple_net_names|1828800|419100|c448fd35-dd23-428e-b379-e3ce60fe4ca4|79023db5-f5f3-47a3-9299-64ff2bb4a9b7|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2",
-        ""
-      ],
-      [
-        "multiple_net_names|1892300|419100|c448fd35-dd23-428e-b379-e3ce60fe4ca4|79023db5-f5f3-47a3-9299-64ff2bb4a9b7|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -618,7 +597,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "./r01-gerber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -691,12 +670,54 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mfr. #",
+          "name": "Mfr. #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part",
+          "name": "Part",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DNP",
+          "name": "DNP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
