@@ -5,7 +5,7 @@
 	(uuid "b5d125f5-074f-4e42-bb74-36f9b00e4c28")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Current:INA169"
+		(symbol "Amplifier_Current:INA180A2"
 			(pin_names
 				(offset 0.127)
 			)
@@ -13,7 +13,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 3.81 5.08 0)
+				(at 3.81 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -21,8 +21,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "INA169"
-				(at 3.81 2.54 0)
+			(property "Value" "INA180A2"
+				(at 3.81 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -31,6 +31,24 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
+				(at 3.81 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 50 V/V, SOT-23-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -39,25 +57,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina169.pdf"
-				(at 0 0.127 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "High-Side Measurement Current Shunt Monitor, 60V, SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "current sense shunt monitor"
+			(property "ki_keywords" "current monitor shunt sensor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -75,10 +75,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "INA169_0_1"
+			(symbol "INA180A2_0_1"
 				(polyline
 					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+						(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.254)
@@ -89,7 +89,7 @@
 					)
 				)
 			)
-			(symbol "INA169_1_1"
+			(symbol "INA180A2_1_1"
 				(pin input line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -2122,7 +2122,7 @@
 	)
 	(rectangle
 		(start 213.36 19.05)
-		(end 262.89 77.47)
+		(end 275.59 77.47)
 		(stroke
 			(width 0)
 			(type default)
@@ -2250,6 +2250,16 @@
 			)
 		)
 		(uuid "f0d2fa20-c2fe-4bac-8d9c-4068261d57f9")
+	)
+	(text "TODO: Increase footprint of 22u for next rev"
+		(exclude_from_sim no)
+		(at 109.22 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fa3f5466-9f62-4fe2-bc58-594b6bb4a945")
 	)
 	(text "fSW = 400KHz, VOUT = 5V\nL = 15uH, COUT = 2x 22uF [16V], RFBT = 53.6K"
 		(exclude_from_sim no)
@@ -2838,6 +2848,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 29.21) (xy 262.89 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2f09dfb-eda5-43a6-aa67-7d276b3ae563")
+	)
+	(wire
+		(pts
 			(xy 180.34 29.21) (xy 180.34 41.91)
 		)
 		(stroke
@@ -2915,6 +2935,16 @@
 			(type default)
 		)
 		(uuid "df6bd5dc-1407-4806-a4bf-28baee47857b")
+	)
+	(wire
+		(pts
+			(xy 262.89 39.37) (xy 262.89 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efa11a10-6d2e-4f27-bb62-e57405c4e41e")
 	)
 	(wire
 		(pts
@@ -3419,6 +3449,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 262.89 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30ed68bb-6e4f-447e-bd62-9fbf8ed6aa46")
+		(property "Reference" "#PWR0172"
+			(at 262.89 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 262.89 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 262.89 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83a0f0d3-0dab-47d1-831c-35ff24cd0a5f")
+		)
+		(instances
+			(project "vrb"
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/6ebefca8-94fb-497b-9dc4-429cb73a3fe7"
+					(reference "#PWR0173")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/cbd9fbc6-f0c8-4add-a4a3-2d3adda2855d"
+					(reference "#PWR0174")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2"
+					(reference "#PWR0175")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/ef814e28-ead5-4934-ba2a-5702f9fa9525"
+					(reference "#PWR0172")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 167.64 62.23 0)
 		(unit 1)
@@ -3749,7 +3857,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Current:INA169")
+		(lib_id "Amplifier_Current:INA180A2")
 		(at 237.49 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3766,7 +3874,7 @@
 				)
 			)
 		)
-		(property "Value" "INA169"
+		(property "Value" "INA180A2"
 			(at 247.65 44.3798 0)
 			(effects
 				(font
@@ -3775,7 +3883,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 237.49 48.26 0)
+			(at 238.76 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3783,8 +3891,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina169.pdf"
-			(at 237.49 48.133 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
+			(at 241.3 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3792,7 +3900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "High-Side Measurement Current Shunt Monitor, 60V, SOT-23-5"
+		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 50 V/V, SOT-23-5"
 			(at 237.49 48.26 0)
 			(effects
 				(font
@@ -4240,6 +4348,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 234.95 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77d4c6e5-9f54-4168-a850-4d3d14746c82")
+		(property "Reference" "#PWR018"
+			(at 234.95 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 234.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 234.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec217179-68ac-4e4c-988c-4ec820a95a0f")
+		)
+		(instances
+			(project ""
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/6ebefca8-94fb-497b-9dc4-429cb73a3fe7"
+					(reference "#PWR030")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/cbd9fbc6-f0c8-4add-a4a3-2d3adda2855d"
+					(reference "#PWR042")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2"
+					(reference "#PWR054")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/ef814e28-ead5-4934-ba2a-5702f9fa9525"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 33.02 54.61 0)
 		(unit 1)
@@ -4318,17 +4504,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 234.95 38.1 0)
+		(lib_id "power:GND")
+		(at 262.89 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "88b00a37-26d9-4b14-95a6-d493b8d9ad1c")
-		(property "Reference" "#PWR018"
-			(at 234.95 41.91 0)
+		(uuid "7a2f57f2-76a2-4c85-ace4-e18cddf2cd3c")
+		(property "Reference" "#PWR0168"
+			(at 262.89 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4336,8 +4522,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+BATT"
-			(at 234.95 33.02 0)
+		(property "Value" "GND"
+			(at 262.89 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +4531,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 38.1 0)
+			(at 262.89 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4354,7 +4540,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 38.1 0)
+			(at 262.89 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4362,8 +4548,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 234.95 38.1 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 262.89 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4372,24 +4558,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "c0e5bd07-f08c-4cb5-bb0b-548996f3bf7a")
+			(uuid "58334d33-756f-4a0b-ad81-77e6ce75f792")
 		)
 		(instances
 			(project "vrb"
 				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/6ebefca8-94fb-497b-9dc4-429cb73a3fe7"
-					(reference "#PWR030")
+					(reference "#PWR0169")
 					(unit 1)
 				)
 				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/cbd9fbc6-f0c8-4add-a4a3-2d3adda2855d"
-					(reference "#PWR042")
+					(reference "#PWR0170")
 					(unit 1)
 				)
 				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2"
-					(reference "#PWR054")
+					(reference "#PWR0171")
 					(unit 1)
 				)
 				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/ef814e28-ead5-4934-ba2a-5702f9fa9525"
-					(reference "#PWR018")
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)
@@ -4472,6 +4658,88 @@
 				)
 				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/ef814e28-ead5-4934-ba2a-5702f9fa9525"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 262.89 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "979c678e-9a9a-4341-97d7-d6f52c0f096d")
+		(property "Reference" "C47"
+			(at 266.7 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 266.7 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 263.8552 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 262.89 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 262.89 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54aeed5a-5a3f-4a50-b2ee-a50ea452d00a")
+		)
+		(pin "2"
+			(uuid "dabf4cb1-32e7-4c33-bbdb-360c545c4fdb")
+		)
+		(instances
+			(project ""
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/6ebefca8-94fb-497b-9dc4-429cb73a3fe7"
+					(reference "C48")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/cbd9fbc6-f0c8-4add-a4a3-2d3adda2855d"
+					(reference "C49")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2"
+					(reference "C50")
+					(unit 1)
+				)
+				(path "/59a9b615-ea12-4a8c-9228-b32f861e8d75/ef814e28-ead5-4934-ba2a-5702f9fa9525"
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -5457,7 +5725,7 @@
 				)
 			)
 		)
-		(property "Value" "1m"
+		(property "Value" "5m"
 			(at 175.26 41.91 90)
 			(effects
 				(font
