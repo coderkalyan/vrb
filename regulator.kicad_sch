@@ -2251,7 +2251,7 @@
 		)
 		(uuid "f0d2fa20-c2fe-4bac-8d9c-4068261d57f9")
 	)
-	(text "fSW = 400KHz, VOUT = 5.2V, IOUT = 3.5A\nL = 10uH, COUT = 2x 33uF [16V], RFBT = 56.1K\nFor 5.0V, RFBT = 53.6K"
+	(text "fSW = 400KHz, VOUT = 5.2V, IOUT = 3.5A\nL = 10uH, COUT = 2x 33uF [16V], RFBT = 56.1K ~ 56K\nFor 5.0V, RFBT = 53.6K"
 		(exclude_from_sim no)
 		(at 30.48 29.21 0)
 		(effects
@@ -5376,7 +5376,7 @@
 		(at 106.68 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "daf7a30c-73c7-4c0c-9b49-04bf3a16b2f3")
@@ -5627,7 +5627,7 @@
 				)
 			)
 		)
-		(property "Value" "BLUE"
+		(property "Value" "GREEN"
 			(at 73.66 100.33 0)
 			(effects
 				(font

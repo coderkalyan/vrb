@@ -1,0 +1,7 @@
+### Footprint positions - created on 2026-01-05T11:07:46-0800 ###
+### Printed by KiCad version 9.0.5
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val        Package                 PosX       PosY       Rot  Side
+J12       Mezzanine  CON_528850474_MOL   109.6511  -129.0000    0.0000  bottom
+## End

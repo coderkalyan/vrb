@@ -2469,6 +2469,16 @@
 		)
 		(uuid "0e5a817e-d577-4229-b393-2f6a93608226")
 	)
+	(text "Next revision: increase ESD footprint size"
+		(exclude_from_sim no)
+		(at 238.252 22.352 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21a7c3fa-0d39-47d6-8e8e-b11cac60354c")
+	)
 	(text "JST-GH 4 Pin Connector"
 		(exclude_from_sim no)
 		(at 217.17 19.05 0)
@@ -3486,7 +3496,7 @@
 		(at 113.03 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
