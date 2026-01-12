@@ -4153,7 +4153,7 @@
 		)
 		(uuid "27d1cdb7-1691-4f66-a44c-363a6004d3fb")
 	)
-	(hierarchical_label "RESV0"
+	(hierarchical_label "IPAYLOAD2"
 		(shape input)
 		(at 217.17 54.61 0)
 		(effects
@@ -4208,7 +4208,7 @@
 		)
 		(uuid "72070f52-9f2a-4232-8254-a451e0eddff5")
 	)
-	(hierarchical_label "RESV1"
+	(hierarchical_label "IPAYLOAD3"
 		(shape input)
 		(at 217.17 57.15 0)
 		(effects
@@ -4230,7 +4230,7 @@
 		)
 		(uuid "7a1a129b-c3ed-412a-8f49-c3e6496b5c09")
 	)
-	(hierarchical_label "IPAYLOAD"
+	(hierarchical_label "IPAYLOAD1"
 		(shape input)
 		(at 217.17 52.07 0)
 		(effects
@@ -4263,7 +4263,7 @@
 		)
 		(uuid "91aa4ac9-2ba7-4392-b6d1-628179101527")
 	)
-	(hierarchical_label "RESV2"
+	(hierarchical_label "VBAT_SCALED"
 		(shape input)
 		(at 217.17 59.69 0)
 		(effects
@@ -4274,7 +4274,7 @@
 		)
 		(uuid "b738c78c-af29-41b2-a705-715d28ff2fe3")
 	)
-	(hierarchical_label "RESV2"
+	(hierarchical_label "VBAT_SCALED"
 		(shape input)
 		(at 198.12 130.81 0)
 		(effects

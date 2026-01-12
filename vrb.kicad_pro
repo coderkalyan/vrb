@@ -272,7 +272,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "multiple_net_names|1117600|558800|26a6ddbb-916f-418e-9575-3c0d967a00e1|287dfcba-f239-439d-88f1-ffde48d4a84b|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51",
+        ""
+      ],
+      [
+        "multiple_net_names|1295400|444500|68b120cc-c1c8-45ff-8585-13444d709cf5|45bcc318-5a52-4e31-b30b-9cea02d67952|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2",
+        ""
+      ],
+      [
+        "multiple_net_names|1739900|457200|0e1505c4-81f2-4fe5-ae6a-936528975f7e|587af7e5-b94b-48ab-b94a-a72983ca1a3d|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51|/59a9b615-ea12-4a8c-9228-b32f861e8d75/eb1e4a76-3344-4a3b-8543-2ea356ffbe51",
+        ""
+      ],
+      [
+        "multiple_net_names|1892300|419100|9deff33c-81b1-4f84-ad03-a648279930bf|79023db5-f5f3-47a3-9299-64ff2bb4a9b7|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2|/59a9b615-ea12-4a8c-9228-b32f861e8d75/d316dd0a-397f-4642-9dde-7ad1cf850ea2",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -614,7 +631,7 @@
       "idf": "",
       "netlist": "",
       "plot": "./r01-gerber",
-      "pos_files": "",
+      "pos_files": "./r01-gerber/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
